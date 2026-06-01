@@ -1,0 +1,22 @@
+const result=JSON.parse(localStorage.getItem("sstiResult"));
+
+if(!result){
+location.href="index.html";
+}
+
+document.getElementById("type-name").textContent="VEIL FOX";
+document.getElementById("type-jp").textContent="擬態ギツネ";
+document.getElementById("type-title").textContent="沈黙の調律師";
+document.getElementById("type-quote").textContent="本音より空気を選びがち";
+
+document.getElementById("growth-stage").textContent="成長モード";
+document.getElementById("growth-percent").textContent="覚醒度 60%";
+
+document.getElementById("people-score").textContent="People 80%";
+document.getElementById("safety-score").textContent="Safety 60%";
+document.getElementById("emotion-score").textContent="Emotion 70%";
+document.getElementById("adapt-score").textContent="Adapt 85%";
+
+document.getElementById("sub-type").textContent="COMPASS";
+document.getElementById("shadow-type").textContent="SOLO";
+document.getElementById("evolution").textContent="COMPASS CAPYBARA";

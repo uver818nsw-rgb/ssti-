@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SSTI診断</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<main class="home">
-
-<h1>SSTI</h1>
-<h2>Survival Strategy Type Indicator</h2>
-
-<p>あなたはどんな生存戦略を使って人生を生きてきましたか？</p>
-
-<p>全40問 / 約3〜5分</p>
-
-<a href="diagnosis.html" class="start-button">診断を始める</a>
-
-</main>
-
-</body>
-</html>
+const QUESTIONS = [
+{id:1,text:"頼みごとを断るのが苦手だ",axis:"people"},
+{id:2,text:"空気を読む方だ",axis:"adapt"},
+{id:3,text:"人の気持ちを優先する",axis:"emotion"},
+{id:4,text:"慎重に行動する",axis:"safety"},
+{id:5,text:"周りに合わせる",axis:"adapt"}
+];

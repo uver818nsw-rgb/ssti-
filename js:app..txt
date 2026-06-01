@@ -1,0 +1,60 @@
+let current=0;
+const answers={};
+
+const q=document.getElementById("question-text");
+const num=document.getElementById("question-number");
+const bar=document.getElementById("progress-fill");
+
+const btns=document.querySelectorAll("button");
+
+function show(){
+
+const item=QUESTIONS[current];
+
+q.textContent=item.text;
+
+num.textContent=`${current+1}/${QUESTIONS.length}`;
+
+bar.style.width=(current/QUESTIONS.length)*100+"%";
+
+}
+
+btns.forEach(b=>{
+b.onclick=()=>{
+
+answers[QUESTIONS[current].id]=Number(b.dataset.value);
+
+current++;
+
+if(current>=QUESTIONS.length){
+finish();
+return;
+}
+
+show();
+
+};
+});
+
+function finish(){
+
+const result={
+mainType:"VEIL",
+subType:"COMPASS",
+shadowType:"SOLO",
+growth:60,
+axisPercent:{
+people:80,
+safety:60,
+emotion:70,
+adapt:85
+}
+};
+
+localStorage.setItem("sstiResult",JSON.stringify(result));
+
+location.href="result.html";
+
+}
+
+show();

@@ -1,0 +1,24 @@
+function calculateAxes(answers){
+
+const scores={
+people:0,
+safety:0,
+emotion:0,
+adapt:0,
+growth:0
+};
+
+QUESTIONS.forEach(q=>{
+
+let v=answers[q.id];
+
+scores[q.axis]+=v;
+
+});
+
+return scores;
+}
+
+function toPercent(v,max){
+return Math.round(v/max*100);
+}
