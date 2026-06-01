@@ -3,44 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>結果</title>
+<title>SSTI診断</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<main class="result-container">
+<main class="home">
 
-<img id="type-image">
+<h1>SSTI</h1>
+<h2>Survival Strategy Type Indicator</h2>
 
-<h1 id="type-name"></h1>
-<h2 id="type-jp"></h2>
-<p id="type-title"></p>
+<p>あなたはどんな生存戦略を使って人生を生きてきましたか？</p>
 
-<p id="type-quote"></p>
+<p>全40問 / 約3〜5分</p>
 
-<p id="growth-stage"></p>
-<p id="growth-percent"></p>
-
-<p id="people-score"></p>
-<p id="safety-score"></p>
-<p id="emotion-score"></p>
-<p id="adapt-score"></p>
-
-<ul id="strengths-list"></ul>
-<ul id="weaknesses-list"></ul>
-<ul id="danger-list"></ul>
-<ul id="recovery-list"></ul>
-
-<p id="sub-type"></p>
-<p id="shadow-type"></p>
-<p id="evolution"></p>
-
-<a href="index.html">もう一度</a>
+<a href="diagnosis.html" class="start-button">診断を始める</a>
 
 </main>
-
-<script src="js/ssti-data.js"></script>
-<script src="js/result.js"></script>
 
 </body>
 </html>
