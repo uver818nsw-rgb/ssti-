@@ -1,7 +1,46 @@
-const QUESTIONS = [
-{id:1,text:"頼みごとを断るのが苦手だ",axis:"people"},
-{id:2,text:"空気を読む方だ",axis:"adapt"},
-{id:3,text:"人の気持ちを優先する",axis:"emotion"},
-{id:4,text:"慎重に行動する",axis:"safety"},
-{id:5,text:"周りに合わせる",axis:"adapt"}
-];
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>結果</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="result-container">
+
+<img id="type-image">
+
+<h1 id="type-name"></h1>
+<h2 id="type-jp"></h2>
+<p id="type-title"></p>
+
+<p id="type-quote"></p>
+
+<p id="growth-stage"></p>
+<p id="growth-percent"></p>
+
+<p id="people-score"></p>
+<p id="safety-score"></p>
+<p id="emotion-score"></p>
+<p id="adapt-score"></p>
+
+<ul id="strengths-list"></ul>
+<ul id="weaknesses-list"></ul>
+<ul id="danger-list"></ul>
+<ul id="recovery-list"></ul>
+
+<p id="sub-type"></p>
+<p id="shadow-type"></p>
+<p id="evolution"></p>
+
+<a href="index.html">もう一度</a>
+
+</main>
+
+<script src="js/ssti-data.js"></script>
+<script src="js/result.js"></script>
+
+</body>
+</html>
