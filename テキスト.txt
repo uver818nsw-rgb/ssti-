@@ -3,32 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>診断</title>
+<title>SSTI診断</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<main class="quiz-container">
+<main class="home">
 
-<div id="question-number">質問</div>
-<div class="progress-bar"><div id="progress-fill"></div></div>
+<h1>SSTI</h1>
+<h2>Survival Strategy Type Indicator</h2>
 
-<h2 id="question-text">読み込み中</h2>
+<p>あなたはどんな生存戦略を使って人生を生きてきましたか？</p>
 
-<div class="answers">
-<button data-value="6">とても当てはまる</button>
-<button data-value="5">当てはまる</button>
-<button data-value="4">やや当てはまる</button>
-<button data-value="3">やや当てはまらない</button>
-<button data-value="2">当てはまらない</button>
-<button data-value="1">全く当てはまらない</button>
-</div>
+<p>全40問 / 約3〜5分</p>
+
+<a href="diagnosis.html" class="start-button">診断を始める</a>
 
 </main>
-
-<script src="js/questions.js"></script>
-<script src="js/engine.js"></script>
-<script src="js/app.js"></script>
 
 </body>
 </html>
